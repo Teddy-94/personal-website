@@ -11,26 +11,26 @@ interface projectCardProps {
 
 function ProjectCard(props: projectCardProps): React.JSX.Element {
   return (
-    <div className={`m-5 p-3 border-solid border-2 shadow-lg rounded-lg ${outlineGradientOnHover}`}>
-      <h2>{props.title}</h2>
-      <div className="flex flex-row justify-between m-2">
-        <p>{props.description}</p>
-        <div className="flex flex-col gap-2 mx-3">
-          <div>
-            <p>Built with</p>
-            <div className="text-3xl flex flex-row gap-2">
-              {props.builtWith}
+      <div className={`mx-auto my-4 p-3 max-w-[800px] border-solid border-2 shadow-lg rounded-lg ${outlineGradientOnHover}`}>
+        <h2 className="font-bold">{props.title}</h2>
+        <div className="flex justify-between m-2 flex-col sm:flex-row">
+          <div className="max-w-[45vw]">{props.description}</div>
+          <div className="flex flex-col gap-2 mx-8 py-3">
+            <div>
+              <p>Built with:</p>
+              <div className="flex flex-row gap-2 text-3xl">
+                {props.builtWith}
+              </div>
             </div>
-          </div>
-          <div>
-            <p>Links</p>
-            <div className="text-3xl flex flex-row gap-2">
-              {props.links}
+            <div>
+              <p>Links</p>
+              <div className="flex flex-row gap-2 text-3xl">
+                {props.links}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div >
   )
 }
 

@@ -23,7 +23,7 @@ const MenuButton: React.FC = () => {
       </button>
       {isOpen && (
         <div className="absolute top-14 right-0 h-fit w-[40vw] bg-white shadow-lg">
-          {<Menu />}
+          {<Menu column={true} />}
         </div>
       )}
     </div>

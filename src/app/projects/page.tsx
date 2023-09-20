@@ -8,9 +8,12 @@ import { VscPreview } from "react-icons/vsc"
 
 function Projects() {
   return (
-    <div>
-      <div>
-        <p className="text-gray-600">Project</p>
+    <div className="mx-auto xl:flex flex-row gap-24">
+      <div className="">
+        <h2 className="text-xl font-bold">Selected Projects</h2>
+        <p>Below is a list of selected projects</p>
+      </div>
+      <div className="flex flex-col">
         <ProjectCard
           title="Project 1"
           description="This project lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet"

@@ -13,15 +13,23 @@ interface menuItem {
 const menuItems = [
   { item: "Projects", link: "/projects" },
   { item: "CV", link: "/cv" },
-  { item: "projects", lin: "/projects" },
+  { item: "Projects", lin: "/projects" },
+  { item: "Contact", lin: "/contact" },
 
 ]
 
+const col = "h-fit flex flex-col p-4 justify-center items-center gap-4"
+const row = "hidden xl:flex h-fit flex-row p-4 justify-center items-center gap-4"
+
 const menuLinkStyle = `text-black-500 mr-4 font-bold text-3xl w-fit ${textGradientOnHover}`
 
-function Menu() {
+// interface menuProps {
+//   direction: string
+//   }
+
+function Menu(props: { column: boolean }) {
   return (
-    <div className="h-fit flex flex-col p-4 justify-center items-center gap-4">
+    <div className={props.column ? col : row}>
       <Link
         href="/"
         target='_self'
@@ -50,7 +58,7 @@ function Menu() {
       >
         Contact
       </Link>
-      <div className="h-[2px] w-full bg-gray-200 lg: hidden" />
+      <div className="h-0.5 w-full bg-gray-200 xl:hidden" />
       <div
         className="flex flex-row gap-5 hover:underline mr-4 text-3xl w-fit"
       >
