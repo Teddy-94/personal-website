@@ -6,7 +6,7 @@ import { FaGithub, FaPython, FaReact } from "react-icons/fa"
 import { SiHtml5, SiJavascript, SiLua, SiNextdotjs, SiRust, SiTailwindcss, SiTypescript } from "react-icons/si"
 import { VscPreview } from "react-icons/vsc"
 
-function Projects() {
+const Projects = () => {
   return (
     <div className="mx-auto xl:flex flex-row gap-24">
       <div className="">

@@ -27,7 +27,7 @@ const menuLinkStyle = `text-black-500 mr-4 font-bold text-3xl w-fit ${textGradie
 //   direction: string
 //   }
 
-function Menu(props: { column: boolean }) {
+const Menu = (props: { column: boolean }) => {
   return (
     <div className={props.column ? col : row}>
       <Link

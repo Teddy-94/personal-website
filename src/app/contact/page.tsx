@@ -2,11 +2,14 @@
 
 import Link from "next/link"
 
-function Contact() {
-  // TODO: make this component
+const Contact = () => {
+  // TODO: contact form
   return (
     <div>
       <p className="text-gray-600">Contact me</p>
+      <div>
+      Please contact me by sending me an email at teodor.adolfsson (at) gmail.com, or send me a message on LinkedIn!
+      </div>
     </div>
   )
 

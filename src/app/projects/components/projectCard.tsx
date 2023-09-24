@@ -9,7 +9,7 @@ interface projectCardProps {
   links: any,
 }
 
-function ProjectCard(props: projectCardProps): React.JSX.Element {
+const ProjectCard = (props: projectCardProps): React.JSX.Element => {
   return (
       <div className={`mx-auto my-4 p-3 max-w-[800px] border-solid border-2 shadow-lg rounded-lg ${outlineGradientOnHover}`}>
         <h2 className="font-bold">{props.title}</h2>
