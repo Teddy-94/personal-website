@@ -3,7 +3,7 @@
 import Link from "next/link"
 
 const Contact = () => {
-  // TODO: contact form
+  // TODO: finnish this page
   return (
     <div>
       <p className="text-gray-600">Contact me</p>
