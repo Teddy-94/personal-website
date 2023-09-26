@@ -11,7 +11,7 @@ const MenuButton: React.FC = () => {
 
 
   return (
-    <div className="relative xl:hidden">
+    <div className="relative lg:hidden">
       <button
         className="h-11 w-11 flex flex-col justify-between p-1.5 bg-white rounded-md focus:outline-none"
         onClick={toggleMenu}

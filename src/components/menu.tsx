@@ -1,3 +1,5 @@
+"use client"
+import { usePathname } from "next/navigation"
 import Link from "next/link"
 import { IconType } from "react-icons"
 import { FaLinkedin } from "react-icons/fa"
@@ -11,53 +13,31 @@ interface menuItem {
 }
 
 const menuItems = [
-  { item: "Projects", link: "/projects" },
-  { item: "CV", link: "/cv" },
-  { item: "Projects", lin: "/projects" },
-  { item: "Contact", lin: "/contact" },
+  { name: "Home", link: "/" },
+  { name: "Projects", link: "/projects" },
+  { name: "CV", link: "/cv" },
+  { name: "Projects", link: "/projects" },
+  { name: "Contact", link: "/contact" },
 
 ]
 
 const col = "h-fit flex flex-col p-4 justify-center items-center gap-4"
-const row = "hidden xl:flex h-fit flex-row p-4 justify-center items-center gap-4"
+const row = "hidden lg:flex my-auto p-4 justify-center items-center gap-4"
 
-const menuLinkStyle = `text-black-500 mr-4 font-bold text-3xl w-fit ${textGradientOnHover}`
-
-// interface menuProps {
-//   direction: string
-//   }
+const menuLinkStyle = `text-black-500 mr-4 font-bold text-2xl w-fit ${textGradientOnHover}`
+const menuLinkStyleSelected = `text-cyan-500 mr-4 font-bold text-2xl w-fit ${textGradientOnHover}`
 
 const Menu = (props: { column: boolean }) => {
+  const path = usePathname()
   return (
     <div className={props.column ? col : row}>
-      <Link
-        href="/"
-        target='_self'
-        className={menuLinkStyle}
-      >
-        Home
-      </Link>
-      <Link
-        href="/projects"
-        target='_self'
-        className={menuLinkStyle}
-      >
-        Projects
-      </Link>
-      <Link
-        href="/cv"
-        target='_self'
-        className={menuLinkStyle}
-      >
-        CV
-      </Link>
-      <Link
-        href="/contact"
-        target='_self'
-        className={menuLinkStyle}
-      >
-        Contact
-      </Link>
+      {menuItems.map((item) => (
+        <Link
+          href={item.link}
+          target="_self"
+          className={item.link === path ? menuLinkStyleSelected : menuLinkStyle}
+        >{item.name}</Link>
+      ))}
       <div className="h-0.5 w-full bg-gray-200 xl:hidden" />
       <div
         className="flex flex-row gap-5 hover:underline mr-4 text-3xl w-fit"
