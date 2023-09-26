@@ -1,22 +1,14 @@
 "use client"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
-import { IconType } from "react-icons"
 import { FaLinkedin } from "react-icons/fa"
 import { VscGithubInverted } from "react-icons/vsc"
 import { textGradientOnHover } from "./styleUtils"
-
-interface menuItem {
-  item: string,
-  link: string,
-  icon?: IconType
-}
 
 const menuItems = [
   { name: "Home", link: "/" },
   { name: "Projects", link: "/projects" },
   { name: "CV", link: "/cv" },
-  { name: "Projects", link: "/projects" },
   { name: "Contact", link: "/contact" },
 
 ]
