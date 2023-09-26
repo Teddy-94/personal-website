@@ -1,14 +1,10 @@
-import { ul } from "../page"
-
 const Skills = () => {
-  return (<>
-    <div className="flex flex-col border-2 gap-2 m-2 justify-evenly lg:flex-row">
-      <h2 className="text-2xl font-bold text-center">Skills</h2>
-
-      <div className="grid grid-cols-1">
-        <h3 className="text-md font-semibold">Languages</h3>
+  return (
+    <div className="flex flex-row border-2 gap-2 rounded-md m-2 justify-evenly">
+      <div className="grid grid-cols-1 p-3">
+        <h3>Languages</h3>
         <div className="ms-4 me-auto">
-          <ul className={ul}>
+          <ul>
             <li> Swedish: Native </li>
             <li> English: Full professional </li>
             <li> Finnish: Beginner </li>
@@ -16,19 +12,23 @@ const Skills = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1">
-        <h3 className="text-md font-semibold">Programming</h3>
-        <div className="ms-4 me-auto">
-          <ul className={ul}>
-            <li> TypeScript </li>
-            <li> React </li>
-            <li> NodeJS </li>
-            <li> Java, SQL </li>
+      <div className="grid grid-cols-1 p-3">
+        <h3>Programming</h3>
+        <div className="ms-4 me-auto grid grid-cols-2 gap-3">
+          <ul>
+            <li> TypeScript / JavaScript </li>
+            <li> React / NextJS </li>
+            <li> NodeJS, Express </li>
+            <li> CSS / Tailwind </li>
+          </ul>
+          <ul>
+            <li> Java </li>
+            <li> SQL / (MySQL) </li>
+            <li> MongoDb / Firebase </li>
           </ul>
         </div>
       </div>
     </div>
-  </>
   )
 }
 
