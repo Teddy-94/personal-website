@@ -1,5 +1,5 @@
-
 const pw1 = () => {
-  return <p>nice</p>}
+  return <p>nice</p>;
+};
 
-export default pw1
+export default pw1;
