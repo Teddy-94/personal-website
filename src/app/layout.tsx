@@ -18,11 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="bg-gray-100 p-4 min-h-screen">
-          <div className="bg-white p-8 rounded-lg min-h-[95vh] shadow-lg shadow-red-900">
-            <Topbar />
-            {children}
-          </div>
+        <main className="bg-white p-8 min-h-screen">
+          <Topbar />
+          {children}
         </main>
       </body>
     </html>

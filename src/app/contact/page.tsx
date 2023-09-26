@@ -1,17 +1,8 @@
 "use client"
 
 import { outlineGradientOnHover } from "@/components/styleUtils"
-import Link from "next/link"
-import { IconType } from "react-icons"
 import { FaLinkedin } from "react-icons/fa"
 import { VscGithubInverted, VscMail } from "react-icons/vsc"
-
-interface contactAlternative {
-  alternative: string,
-  link: string,
-  icon: IconType
-  text: string
-}
 
 const contactAlternatives = [
   {
@@ -24,7 +15,7 @@ const contactAlternatives = [
     alternative: "email",
     link: "mailto:teodor.adolfsson@gmail.com",
     icon: <VscMail />,
-    text: "Email: teodor.adolfsson@gmail.com",
+    text: "teodor.adolfsson@gmail.com",
   },
   {
     alternative: "LinkedIn",
@@ -36,17 +27,18 @@ const contactAlternatives = [
 
 const Contact = () => {
   return (
-    <div className="container mx-auto my-16 p-8 h-3/4">
-      <div className="grid grid-cols-1 lg:grid-cols-3 mx-auto gap-12 h-full">
-        {contactAlternatives.map((item) => (
-          <div onClick={() => window.open(item.link, "_blank")} className={`cursor-pointer p-4 w-full h-full border-solid border-2 shadow-lg rounded-lg ${outlineGradientOnHover}`}>
-            <div className="h-full text-xl flex gap-2 items-center justify-center mx-auto my-auto">
-              {item.icon} <p>{item.text}</p>
-            </div>
+    <div className="grid grid-cols-1 xl:grid-cols-3 mt-16 mx-auto gap-12 h-full">
+      {contactAlternatives.map((item) => (
+        <div
+          key={item.alternative}
+          onClick={() => window.open(item.link, "_blank")}
+          className={`cursor-pointer p-4 w-full min-h-[20vh] min-w-fit h-full border-solid border-2 shadow-lg rounded-lg ${outlineGradientOnHover} xl:min-h-[55vh] hover:text-orange-800`}>
+          <div className="h-full text-md flex gap-2 min-w-fit items-center justify-center mx-auto my-auto sm:text-xl font-semibold">
+            {item.icon} <p>{item.text}</p>
           </div>
-        ))}
+        </div>
+      ))}
 
-      </div>
     </div>
   )
 

@@ -1,5 +1,5 @@
 "use client"
-import { outlineGradientOnHover } from "@/components/styleUtils"
+import { h3, outlineGradientOnHover } from "@/components/styleUtils"
 
 interface projectCardProps {
   title: string,
@@ -13,9 +13,9 @@ const ProjectCard = (props: projectCardProps) => {
   const projectUrl = props.projectLink.toString()
   return (
     <article onClick={() => location.href = projectUrl} className={`cursor-pointer p-4 w-full h-full border-solid border-2 shadow-lg rounded-lg ${outlineGradientOnHover}`}>
-      <h2 className="font-bold">
+      <h3 className={h3}>
         {props.title}
-      </h2>
+      </h3>
       <div className="flex justify-between m-2 flex-col sm:flex-row">
         <p>{props.description}</p>
         <div className="flex flex-col gap-2 mx-8 py-3">

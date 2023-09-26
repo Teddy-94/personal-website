@@ -1,15 +1,15 @@
+import { h2 } from "@/components/styleUtils"
 import ProjectCard from "./components/projectCard"
-import Link from "next/link"
 import { FaGithub, FaPython, FaReact } from "react-icons/fa"
 import { SiHtml5, SiJavascript, SiLua, SiNextdotjs, SiRust, SiTailwindcss, SiTypescript } from "react-icons/si"
 import { VscPreview } from "react-icons/vsc"
 
+// TODO move data to separate files
 const Projects = () => {
   return (
     <div className="">
       <div className="">
-        <h2 className="text-xl font-bold">Selected Projects</h2>
-        <p>Below is a list of selected projects</p>
+        <h2 className={h2}>Selected Projects</h2>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mx-auto my-4">
         <ProjectCard
