@@ -2,13 +2,13 @@
 import { useState } from 'react';
 import Menu from './menu';
 
+// TODO make menu close on click outside or on link
 const MenuButton: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
 
   return (
     <div className="relative lg:hidden">
@@ -22,7 +22,7 @@ const MenuButton: React.FC = () => {
 
       </button>
       {isOpen && (
-        <div className="absolute top-14 right-0 h-fit w-[40vw] bg-white shadow-lg">
+        <div className="absolute top-14 right-0 h-fit w-[60vw] bg-white shadow-lg">
           {<Menu column={true} />}
         </div>
       )}

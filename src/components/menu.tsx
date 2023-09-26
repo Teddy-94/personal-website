@@ -10,10 +10,9 @@ const menuItems = [
   { name: "Projects", link: "/projects" },
   { name: "CV", link: "/cv" },
   { name: "Contact", link: "/contact" },
-
 ]
 
-const col = "h-fit flex flex-col p-4 justify-center items-center gap-4"
+const col = "h-fit flex flex-col p-4 justify-center items-center gap-6"
 const row = "hidden lg:flex my-auto p-4 justify-center items-center gap-4"
 
 const menuLinkStyle = `text-black-500 mr-4 font-bold text-2xl w-fit ${textGradientOnHover}`
@@ -25,6 +24,7 @@ const Menu = (props: { column: boolean }) => {
     <div className={props.column ? col : row}>
       {menuItems.map((item) => (
         <Link
+          key={item.link}
           href={item.link}
           target="_self"
           className={item.link === path ? menuLinkStyleSelected : menuLinkStyle}
