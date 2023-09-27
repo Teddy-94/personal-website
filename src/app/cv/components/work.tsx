@@ -21,7 +21,12 @@ const Work = () => {
               MySql and Sequelize.{" "}
             </li>
             <li> Expanded testing coverage using Jest.</li>
-            <li> Created an admin portal for Quartr's API customers. </li>
+            <li>
+              {" "}
+              Created and launched an admin portal for Quartr's API customers,
+              which simplified management of customers API keys and improved
+              their user experience.{" "}
+            </li>
             <li>
               {" "}
               Contributed with significant refactoring from JavaScript to
