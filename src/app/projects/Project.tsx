@@ -10,15 +10,15 @@ import {
 } from "react-icons/si";
 
 export const icons = {
-  Html5: <SiHtml5 />,
-  Javascript: <SiJavascript />,
-  React: <FaReact />,
-  Nextdotjs: <SiNextdotjs />,
-  Typescript: <SiTypescript />,
-  Tailwindcss: <SiTailwindcss />,
-  Python: <FaPython />,
-  Rust: <SiRust />,
-  Lua: <SiLua />,
+  Html5: <SiHtml5 key="html" />,
+  Javascript: <SiJavascript key="Javascript" />,
+  React: <FaReact key="React" />,
+  Nextdotjs: <SiNextdotjs key="Nextdotjs" />,
+  Typescript: <SiTypescript key="Typescript" />,
+  Tailwindcss: <SiTailwindcss key="Tailwindcss" />,
+  Python: <FaPython key="Python" />,
+  Rust: <SiRust key="Rust" />,
+  Lua: <SiLua key="Lua" />,
 };
 
 export type IconKeys = typeof icons;
