@@ -13,7 +13,7 @@ const MenuButton: React.FC = () => {
   return (
     <div className="relative lg:hidden">
       <button
-        className="flex h-11 w-11 flex-col justify-between rounded-md bg-white p-1.5 focus:outline-none"
+        className="mt-[-10px] flex h-11 w-11 flex-col justify-between rounded-md bg-white p-1.5 focus:outline-none"
         onClick={toggleMenu}
       >
         <div
