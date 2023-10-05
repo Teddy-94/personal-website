@@ -16,31 +16,27 @@ const Work = () => {
         <div className="mx-auto px-6">
           <ul>
             <li>
-              {" "}
               Contributing to the core backend in TypeScript, NodeJS, Express,
-              MySql and Sequelize.{" "}
+              MySql and Sequelize.
             </li>
             <li> Expanded testing coverage using Jest.</li>
             <li>
-              {" "}
               Created and launched an admin portal for Quartr's API customers,
               which simplified management of customers API keys and improved
-              their user experience.{" "}
+              their user experience. Contributed with significant refactoring
+              from JavaScript to TypeScript.
             </li>
             <li>
-              {" "}
               Contributed with significant refactoring from JavaScript to
-              TypeScript.{" "}
+              TypeScript.
             </li>
             <li>
-              {" "}
-              Significantly improved automatically generated API documentation.{" "}
+              Significantly improved automatically generated API documentation.
             </li>
-            <li> Created and rewiewed pull requests using Git/GitHub.</li>
+            <li>Created and reviewed pull requests using Git/GitHub.</li>
             <li>
-              {" "}
-              Handeled tickets in Jira, and collaborated using Slack and
-              internal tools.
+              Handled tickets in Jira, and collaborated using Slack and internal
+              tools.
             </li>
           </ul>
         </div>
@@ -63,7 +59,7 @@ const Work = () => {
               Assisted large customers, resellers, and SMEs with invoicing and
               billing related issues and questions.
             </li>
-            <li>Supporting payment terminal and acquiring custmers.</li>
+            <li>Supporting payment terminal and acquiring customers.</li>
             <li>
               Wrote process and handbook documentation related to invoicing
               tasks.
@@ -91,7 +87,7 @@ const Work = () => {
               Collaborated with the debt collection partner in collection cases.
             </li>
             <li>Worked in a close team of three people.</li>
-            <li>Summer subsitute two summers during studies.</li>
+            <li>Was a summer substitute for two summers during studies.</li>
           </ul>
         </div>
       </div>
